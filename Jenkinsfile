@@ -1,6 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'node:16.17.1-alpine' } }
+    agent { docker { image 'node:current-alpine3.16' } }
     stages {
         stage('build') {
             steps {
